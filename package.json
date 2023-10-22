@@ -1,6 +1,6 @@
 {
   "name": "material-symbols-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Partial Material Symbols package",
   "author": "Vladimir Malkov <malkovvladimir73@gmail.com>",
   "license": "MIT",
@@ -11,7 +11,8 @@
     "webfont:build": "webfont \"./svg-icons/**/*.svg\" --config ./webfontrc.json",
     "load:symbol": "yarn build && node dist/index.js",
     "dev": "ts-node src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "publish": "yarn build && npm publish"
   },
   "homepage": "https://github.com/MalkovVladimir/material-symbols-picker",
   "repository": {

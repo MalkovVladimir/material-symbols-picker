@@ -65,7 +65,9 @@ export const downloadSymbolSVG = async (
   let symbolName: string;
   let symbolNameWithParams: string;
 
-  if (params.raw) {
+
+  // If path setted - symbolName in raw format
+  if (params.raw || params.path) {
     symbolName = rawSymbolName.split('_')[0];
     symbolNameWithParams = rawSymbolName;
   } else {

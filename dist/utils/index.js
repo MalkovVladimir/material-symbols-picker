@@ -47,7 +47,8 @@ export const downloadSymbolSVG = async (rawSymbolName, params) => {
     const { type = 'outlined' } = params;
     let symbolName;
     let symbolNameWithParams;
-    if (params.raw) {
+    // If path setted - symbolName in raw format
+    if (params.raw || params.path) {
         symbolName = rawSymbolName.split('_')[0];
         symbolNameWithParams = rawSymbolName;
     }
