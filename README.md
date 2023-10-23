@@ -1,4 +1,4 @@
-# Materail Symbols Picker
+# Material Symbols Picker
 
 This cli tool allows you to load exact icons from Material Symbols repo.
 With all this svgs you can easely build your own webfont.
